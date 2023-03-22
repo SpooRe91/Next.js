@@ -30,7 +30,6 @@
 
 .navbar {
   display: flex;
-  background: linear-gradient(180deg, rgb(0 0 0) 0%, rgb(102 102 102 / 0%) 50%, rgb(0 0 0) 100%);
   position: fixed;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
@@ -63,8 +62,8 @@
 
 .nav-link {
   display: flex;
-  color: #000;
-  text-shadow: 0 0 2px coral;
+  color: coral;
+  text-shadow: 0px 2px 2px rgb(0 0 0);
   text-decoration: none;
   line-height: 64px;
   transition: all .23s ease-in-out;
@@ -72,13 +71,17 @@
 }
 
 .nav-link:hover {
-  color: coral;
-  text-shadow: 1px 1px 0 #000;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 8px 0px #000, 0px 0px 20px black;
   transform: translatey(-4px);
 }
 
 .nav-link:not(:hover) {
   transform: translatey(0px);
+}
+
+.nav-link:active {
+  text-shadow: 1px 1px 0px #000, 0px 0px 20px black;
 }
 
 
