@@ -62,15 +62,18 @@
 }
 
 .nav-link {
-  color: black;
-  text-shadow: 0px 0px 2px coral;
+  display: flex;
+  color: #000;
+  text-shadow: 0 0 2px coral;
   text-decoration: none;
-  transition: all 230ms ease-in-out;
+  line-height: 64px;
+  transition: all .23s ease-in-out;
+  align-items: center;
 }
 
 .nav-link:hover {
   color: coral;
-  text-shadow: 1px 1px 0px rgb(0 0 0);
+  text-shadow: 1px 1px 0 #000;
   transform: translatey(-4px);
 }
 
