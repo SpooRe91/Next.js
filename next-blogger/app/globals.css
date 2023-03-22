@@ -20,3 +20,71 @@
   overflow-y: overlay;
   overflow-x: overlay;
 }
+
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans");
+
+.nav-container {
+  width: 100%;
+  display: inline-block;
+}
+
+.navbar {
+  display: flex;
+  background: linear-gradient(180deg, rgb(0 0 0) 0%, rgb(102 102 102 / 0%) 50%, rgb(0 0 0) 100%);
+  position: fixed;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  top: 0;
+  width: 100%;
+  height: 4rem;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.nav-li {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1.5rem;
+  height: 100%;
+  align-items: center;
+}
+
+.nav-link {
+  color: black;
+  text-shadow: 0px 0px 2px coral;
+  text-decoration: none;
+  transition: all 230ms ease-in-out;
+}
+
+.nav-link:hover {
+  color: coral;
+  text-shadow: 1px 1px 0px rgb(0 0 0);
+  transform: translatey(-4px);
+}
+
+.nav-link:not(:hover) {
+  transform: translatey(0px);
+}
+
+
+.active {
+  background-color: coral;
+  color: black;
+}
+
+.pending {
+  background-color: transparent;
+  color: coral;
+}
